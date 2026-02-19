@@ -1,0 +1,113 @@
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+    }
+
+    /* Responsive image */
+    .responsive-img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px auto;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Fade-in scroll animation */
+    .fade-in {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 1s ease-out, transform 1s ease-out;
+    }
+
+    .fade-in.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Navigation */
+    .navbar {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background-color: #2a9d8f;  /* teal color that matches your banner */
+      color: white;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+      padding: 15px 0;
+      z-index: 1000;
+    }
+
+    .navbar a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .navbar a:hover {
+      text-decoration: underline;
+    }
+
+    /* Header */
+    .header {
+      background-image: url("images/soarheader.png");
+      background-size: cover;
+      background-position: center;
+      height: 250px;
+      display: flex;
+      align-items: center;
+      padding: 30px 60px;
+      position: relative;
+      margin-top: 60px;
+    }
+
+    .logo {
+      max-height: 200px;
+      z-index: 1;
+    }
+
+    /* Sections */
+    .section {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: 0 auto;
+      background-color: #fff;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      margin-top: 40px;
+    }
+
+    .section h2 {
+      margin-top: 0;
+      text-align: center;
+    }
+
+    .social-links {
+      text-align: center;
+      margin-top: 20px;
+    }
+
+    .social-links img {
+      max-width: 120px;
+      margin-right: 20px;
+      vertical-align: middle;
+    }
+
+    .contact p {
+      margin: 5px 0;
+    }
+    .article-link img {
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .article-link img:hover {
+      transform: scale(1.05);
+    }
